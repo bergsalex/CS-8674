@@ -1,4 +1,4 @@
-# Geneweaver 3 - Software Requirements 001
+# Geneweaver 3 - Software Requirements
 
 ## 1. Introduction
 
@@ -17,12 +17,28 @@ work on the project required to fully implement the Geneweaver 3 system for all 
 - [Conventions](./conventions-001.md)
 
 ## 2. Overall Goals
+The goal of the Geneweaver 3 project is to redesign the Geneweaver system to enable the three independent project
+stakeholders to use the system to perform their research and education activities. This involves balancing competing
+priorities and constraints of the three stakeholder groups. The following goals are intended to guide the design and 
+development of the Geneweaver 3 system.
 
 ### 2.1 Enable Genomics Researchers
+The Geneweaver system must be designed to enable genomics researchers to easily use the system to perform their
+research. This includes the ability to easily upload and manage genesets, the ability to easily search for and use
+curated genesets, and the ability to easily use the analysis tools to compare, combine, and investigate genesets.
 
 ### 2.2 Enable Scientific Curators
+Geneweaver depends on the expert curation activities of genomics researchers. The Geneweaver system must be designed
+to enable genomics researchers to easily curate and contribute to the system. This includes the ability to easily
+upload and manage curated genesets, the ability to easily search for existing genesets, and the ability to
+organize and manage genesets as they are moved through the curation process.
 
 ### 2.3 Enable Computer Science Educators and Students
+The Geneweaver system must be designed to enable computer science educators and students to easily use the system
+to learn about the process of building and using a web-based system. This includes the ability to easily identify
+subject specific use-cases, the ability to easily identify and use the system's features, and the ability to
+easily identify and use the system's underlying technologies. It also includes the ability to set up and install the
+system and its components on a local machine.
 
 ## 3. Background and Context
 ### Background
@@ -31,11 +47,45 @@ system has three core user groups: genomics researchers, expert literature curat
 students. The system allows users to upload sets of genes, search for curated sets of genes, and then use a suite of 
 analysis tools to compare, combine, and investigate those sets of genes.
 
-### Product Description
+### Product Description and Features
+Geneweaver is a "system for the integration and analysis of heterogeneous functional genomics data." The system has
+five core system features: geneset upload, geneset search, geneset organization and management, geneset curation, 
+and geneset analysis. The system's suite of analysis tools can be used to compare, combine, and investigate genesets.
 
-### Product Features
+The system has three core components: the Geneweaver website, the Geneweaver database, and the Geneweaver analysis
+tools. The Geneweaver website is a web-based application that allows users to upload genesets, search for curated
+genesets, and use the analysis tools to compare, combine, and investigate genesets. The Geneweaver database is a
+relational database that stores the genesets and the analysis results. The Geneweaver analysis tools are a suite of
+command line tools that can be used to compare, combine, and investigate genesets.
 
 ## 4. Assumptions
+
+### 4.1 Computer Science Educator and Student Utility Awareness
+It is assumed that the computer science educators and students who will use the Geneweaver system will be aware of,
+or are expected to become aware of, the following software engineering utilities: version control, continuous
+integration, continuous deployment, continuous delivery, automated testing, automated code analysis, and peer
+code review.
+
+### 4.2 Computer Science Educator and Student Web Access
+It is assumed that the computer science educators and students who will use the Geneweaver system will have access to
+a computer with a web browser and an internet connection. This is required to access the Geneweaver website, but will
+also be assumed to be the default method for accessing Geneweaver's documentation.
+
+### 4.3 Computer Science Educator and Student Command Line Access
+It is assumed that the computer science educators and students who will use the Geneweaver system will have access to
+a computer with a command line interface. This will become the default method for accessing the Geneweaver analysis
+tools when utilized without deploying the entire Geneweaver system. 
+
+### 4.4 Computer Science Educator and Student Virtualization Access
+It is assumed that the computer science educators and students who will use the Geneweaver system will have access to
+either **a) a UNIX based operating system**, or **b) a virtualization environment** that can be used to run a UNIX based
+operating system. This will become the default method for accessing the Geneweaver analysis tools when utilized
+without deploying the entire Geneweaver system.
+
+#### 4.4a Virtualization Environment
+A virtualization environment is a software application that can be used to run a virtual machine. Geneweaver will 
+provide built-in support for *docker*, and will be developed such that it can be easily deployed in other virtualization
+environments that support the UNIX operating system.
 
 ## 5. User Stories
 
@@ -153,10 +203,55 @@ users. The system should be designed to support the broad contribution goals of 
 of bugs and issues by non-technical users, and allowing for the resolution of bugs and issues by a variety of 
 contributors.
 
+### 5.14 Replication of Current System Features
+The redesigned system should replicate the current system's features, especially regarding the curation process. This 
+means that we cannot remove any features from the current system, and we must ensure that the new system is able to
+perform all the same tasks as the current system.
+
 ## 6. User Interface and Design
+All work done in relation to this document should support the existing user interface and design of the Geneweaver
+system. The user interface and design of the Geneweaver system should be improved incrementally, using the current
+system's user interface and design as a starting point. Systems and processes should be created to allow for incremental
+improvements to the user interface and design of the system.
 
 ## 7. Questions
 
+- What is the best way to improve the Geneweaver system's set-up processes?
+- What is the best way to decouple the Geneweaver system's analysis tools from the Geneweaver website?
+- What automated processes should be created to make it easier to contribute to the Geneweaver system?
+- What automated processes should be created to make it easier to contribute to the Geneweaver system's documentation?
+
 ## 8. Not Doing
 
+### 8.1 Complete Rewrite of the System
+The current system is too complex and too difficult to maintain. A complete rewrite of the system is not feasible, as
+it would require a significant amount of time and resources. The current system should be improved incrementally,
+using the current system as a starting point. Systems and processes should be created to allow for incremental
+improvements to the system.
 
+### 8.2 User Interface and Design Improvements
+The current system's user interface and design functional. It is not feasible to improve the user interface and design 
+of the system at this time. The current system's user interface and design should be improved incrementally, using the 
+current system's user interface and design as a starting point. Systems and processes should be created to allow for
+incremental improvements to the user interface and design of the system.
+
+### 8.3 Completed Subject Specific Documentation
+The current system is large and complex, and it is not feasible to create subject specific documentation for all
+aspects of the system. The current system's documentation should be improved incrementally, using the current system's
+documentation as a starting point. Processes should be created to ensure that documentation is kept up-to-date as the
+system is improved, and so that new documentation can be created incrementally.
+
+### 8.4 Package Based Architecture
+The package based architecture component is currently being worked on by a separate team at 
+[The Jackson Laboratory](www.jax.org). This work should remain aware of the work by that team, and it should be 
+coordinated with that team to ensure that the work is complementary and that the work is not duplicated. However,
+the work by that team should not be a blocker for the work described in this document.
+
+### 8.5 Analysis Tool Execution
+The execution environment for analysis tools is currently being worked on by a separate team at 
+[The Jackson Laboratory](www.jax.org). This work should remain aware of the work by that team, and it should be
+coordinated with that team to ensure that the work is complementary and that the work is not duplicated. However,
+the work by that team should not be a blocker for the work described in this document. The work in this document
+**should** tackle architecture and design issues, but should not tackle production deployment work. The work in this
+document should not be a blocker for the work by that team, but the work by that team should be highly influential
+to the work in this document.
