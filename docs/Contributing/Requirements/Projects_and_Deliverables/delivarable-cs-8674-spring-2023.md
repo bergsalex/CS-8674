@@ -1,4 +1,4 @@
-# Deliverables for CS 8674, Spring 2023
+# Berger CS 8674, Spring 2023
 This document outlines the deliverables for Alexander Berger's CS 8674 masters project. The project is to create
 a framework for enabling a progressive refactoring of the [Geneweaver](geneweaver.org) project that accounts for the
 three main project stakeholders: scientific curators, genomic researchers, and educators and students.
