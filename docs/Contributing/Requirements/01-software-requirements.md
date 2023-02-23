@@ -1,4 +1,4 @@
-# Geneweaver 3 - Software Requirements
+# Software Requirements
 
 ## 1. Introduction
 
@@ -12,9 +12,9 @@ developers, testers, and technical writers, past, present and future. This docum
 work on the project required to fully implement the Geneweaver 3 system for all identified stakeholders and priorities.
 
 ### External Documents
-- [Clients and Stakeholders](./clients-and-stakeholders-001.md)
-- [Operating Environment](./operating-environment-001.md)
-- [Conventions](./conventions-001.md)
+- [Clients and Stakeholders](02-clients-and-stakeholders.md)
+- [Operating Environment](04-operating-environment.md)
+- [Conventions](03-conventions.md)
 
 ## 2. Overall Goals
 The goal of the Geneweaver 3 project is to redesign the Geneweaver system to enable the three independent project
@@ -243,13 +243,13 @@ system is improved, and so that new documentation can be created incrementally.
 
 ### 8.4 Package Based Architecture
 The package based architecture component is currently being worked on by a separate team at 
-[The Jackson Laboratory](www.jax.org). This work should remain aware of the work by that team, and it should be 
+[The Jackson Laboratory](http://www.jax.org). This work should remain aware of the work by that team, and it should be 
 coordinated with that team to ensure that the work is complementary and that the work is not duplicated. However,
 the work by that team should not be a blocker for the work described in this document.
 
 ### 8.5 Analysis Tool Execution
 The execution environment for analysis tools is currently being worked on by a separate team at 
-[The Jackson Laboratory](www.jax.org). This work should remain aware of the work by that team, and it should be
+[The Jackson Laboratory](http://www.jax.org). This work should remain aware of the work by that team, and it should be
 coordinated with that team to ensure that the work is complementary and that the work is not duplicated. However,
 the work by that team should not be a blocker for the work described in this document. The work in this document
 **should** tackle architecture and design issues, but should not tackle production deployment work. The work in this
